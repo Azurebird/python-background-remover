@@ -1,3 +1,4 @@
 .venv
 .husky
 .idea
+node_modules
