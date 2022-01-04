@@ -7,10 +7,13 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "precommit": "yarn lint",
     "lint": "poetry run isort app && poetry run black app",
     "start": "poetry run python app/main.py",
-    "setup": "poetry install"
+    "setup": "husky install && poetry install"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "husky": "^7.0.4"
+  },
   "packageManager": "yarn@3.1.1"
 }
