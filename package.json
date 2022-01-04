@@ -1,0 +1,16 @@
+{
+  "name": "background-remover",
+  "version": "1.0.0",
+  "description": "Removes background from camera",
+  "main": "app/main.py",
+  "author": "Azurebird <white.camilo@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "poetry run isort app && poetry run black app",
+    "start": "poetry run python app/main.py",
+    "setup": "poetry install"
+  },
+  "devDependencies": {},
+  "packageManager": "yarn@3.1.1"
+}
